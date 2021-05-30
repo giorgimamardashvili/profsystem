@@ -1,0 +1,63 @@
+.head-slider {
+  width: 100%;
+  height: calc(100vh - 240px);
+
+  @include xl {
+    height: calc(100vh - 135px);
+  }
+
+  @include tab {
+    max-height: 656px;
+    height: calc(100vh - 153px);
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 70%;
+    }
+  }
+
+  &__button {
+    color: white;
+    background-color: black;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    opacity: 0.3;
+
+    @include tab {
+      width: 44px;
+      height: 44px;
+    }
+
+    &:hover {
+      opacity: 1;
+      background-color: $red;
+    }
+
+    &::after {
+      font-size: 16px;
+    }
+  }
+
+  &__pag {
+    span {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      margin: 0 15px !important;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #e4190b !important;
+  }
+}

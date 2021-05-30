@@ -1,0 +1,12 @@
+.page-categories {
+  background: #f8f8f8;
+
+  .container {
+    display: flex;
+
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

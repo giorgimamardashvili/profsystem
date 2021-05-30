@@ -1,0 +1,111 @@
+.partners {
+  padding: 124px 15px;
+
+  @include tab {
+    padding: 35px 15px;
+  }
+
+  &__head {
+    margin-left: 0;
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 6px;
+      @include m2 {
+        font-size: 18px;
+      }
+    }
+    a {
+      font-size: 14px;
+      color: $red;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0px;
+        height: 1px;
+        position: absolute;
+        background-color: #e4190b;
+        bottom: -10px;
+        right: 0;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        &::after {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include tab {
+      display: none;
+    }
+    p {
+      font-family: "FiraBook";
+    }
+  }
+
+  &__list {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 219px);
+    grid-auto-rows: 80px;
+    grid-gap: 10px;
+    justify-content: center;
+
+    @include lg {
+      grid-template-columns: repeat(auto-fill, 190px);
+      grid-auto-rows: 70px;
+    }
+
+    @include tab {
+      width: 100%;
+      grid-template-columns: repeat(auto-fill, 158px);
+      grid-auto-rows: 60px;
+    }
+    a {
+      width: 219px;
+      height: 80px;
+      border-radius: 15px;
+
+      &:hover {
+        box-shadow: 0px 0px 30px rgba(20, 29, 41, 0.12);
+      }
+
+      @include lg {
+        width: 190px;
+        height: 70px;
+      }
+
+      @include tab {
+        &:nth-child(n + 5) {
+          display: none;
+        }
+      }
+
+      @include sm {
+        width: 158px;
+        height: 60px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

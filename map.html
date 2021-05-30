@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/d9aebd5163.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header" >
+        <div class="header__head container">
+            <div class="header__burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="assets/img/icons/main-logo.svg" alt="logo">
+            </a>
+            <form action="" class="header__search">
+                <input type="text" name="search" class="search" placeholder="ძებნა…" >
+                <button type="submit" id="searchBtn">
+                    <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Path_3" data-name="Path 3" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                    </svg>
+                    <i class="fas fa-times"></i>
+                </button>
+                <button type="submit" class="hide">
+                    <img src="assets/img/icons/sm-search.svg" alt="search">
+                </button>
+            </form>
+            <div class="header__info">
+                <div class="header__email">
+                    <img src="assets/img/icons/mail.svg" alt="email">
+                    <p>example@gmail.com</p>
+                </div> 
+                <div class="header__tel">
+                    <img src="assets/img/icons/tel.svg" alt="tel">
+                    <p>+995 555 544 311</p>
+                </div>
+            </div>
+            <div class="header__lang">
+                <a class="hide">ENG <span>.</span></a>
+                <a class="selected">GEO <span>.</span></a>
+                <a class="hide">RUS <span>.</span></a>
+                <a class="hide">AZB <span>.</span></a>
+            </div>
+
+        </div>
+        <div class="header__line container"></div>
+        <div class="header__category container">
+            <ul>
+                <li class="cat-down"><a href="index.html">მთავარი</a></li>
+                <li class="cat-down"><a href="page-about.html">ჩვენს შესახებ</a></li>
+                <li class="cat-down">
+                    <a href="page-categories.html" class="product-title">პროდუქცია</a>
+                    <div class="category-holder">
+                        <ul class="categories">
+                            <a class="categories-title" href="">პროფილი</a>
+                            <li class="subcategories"><a href="">ჭერის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ტიხრის პროფილი</a></li>
+                            <li class="subcategories"><a href="">კარის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                        <ul class="categories">
+                            <a class="categories-title" href="">აქსესუარი</a>
+                            <li class="subcategories"><a href="">საკიდი</a></li>
+                            <li class="subcategories"><a href="">მავთული</a></li>
+                            <li class="subcategories"><a href="">სხვა</a></li>
+                            <li class="subcategories"><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                        <ul class="categories">
+                            <a class="categories-title" href="">კუთხოვანა</a>
+                            <li class="subcategories"><a href="">ჭერის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ტიხრის პროფილი</a></li>
+                            <li class="subcategories"><a href="">კარის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                        <ul class="categories">
+                            <a class="categories-title" href="">დუბელი</a>
+                            <li class="subcategories"><a href="">საკიდი</a></li>
+                            <li class="subcategories"><a href="">მავთული</a></li>
+                            <li class="subcategories"><a href="">სხვა</a></li>
+                            <li class="subcategories"><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                        <ul class="categories">
+                            <a class="categories-title" href="">სჭვალი</a>
+                            <li class="subcategories"><a href="">ჭერის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ტიხრის პროფილი</a></li>
+                            <li class="subcategories"><a href="">კარის პროფილი</a></li>
+                            <li class="subcategories"><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cat-down"><a href="photo-gallery.html">ფოტოგალერეა</a></li>
+                <li class="cat-down"><a href="video-gallery.html">ვიდეოგალერეა</a></li>
+                <li class="cat-down"><a href="page-partners.html">პარტნიორები</a></li>
+                <li class="cat-down"><a href="branch.html">ფილიალები</a></li>
+                <li class="cat-down"><a href="page-contact.html">კონტაქტი</a></li>
+            </ul>
+            <div class="back">
+                <i class="fas fa-chevron-left"></i>
+                  
+            </div>
+            <div class="socials-header">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22"><path d="M18,2H15a5,5,0,0,0-5,5v3H7v4h3v8h4V14h3l1-4H14V7a1,1,0,0,1,1-1h3Z" transform="translate(-6 -1)" fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24.002" height="17.46" viewBox="0 0 24.002 17.46"><path d="M-1407,202.46c-.069,0-6.9-.005-8.6-.461a2.8,2.8,0,0,1-1.94-1.92,29.074,29.074,0,0,1-.461-5.33,29.128,29.128,0,0,1,.461-5.29,2.784,2.784,0,0,1,1.94-2c1.7-.455,8.531-.46,8.6-.46s6.9,0,8.6.419a2.79,2.79,0,0,1,1.94,2,29.154,29.154,0,0,1,.46,5.33,29.1,29.1,0,0,1-.46,5.25,2.787,2.787,0,0,1-1.94,2C-1400.1,202.455-1406.931,202.46-1407,202.46Zm-2.25-10.98v6.539l5.75-3.27-5.75-3.27Z" transform="translate(1419.001 -186)" fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g transform="translate(0.681 0.681)"><rect width="20" height="20" rx="5" transform="translate(0.319 0.319)" fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M16.068,11.4a4.034,4.034,0,1,1-3.4-3.4A4.034,4.034,0,0,1,16.068,11.4Z" transform="translate(-1.851 -1.58)" fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><line x2="0.01" transform="translate(15.73 4.908)" fill="none" stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></svg></a>
+            </div>
+            <div class="mob-lang">
+                <a href="">GEO <span>.</span></a>
+                <a href="">ENG <span>.</span></a>
+            </div>
+        </div>
+
+        
+    </header>
+    <main class="map">
+        <div id="map2">
+
+        </div>
+        <div id="content">Hello world!</div>
+    </main>
+    <form action="" class="search-mob">
+        <input type="text" name="search" class="search" placeholder="ძებნა…" >
+        <button type="submit">
+            <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path id="Path_3" data-name="Path 3" d="M0,0H24V24H0Z" fill="none"/>
+                <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="black"/>
+            </svg>
+        </button>
+    </form>
+
+    <footer class="footer">
+        <div class="footer__category container">
+            <h2>კატეგორიები</h2>
+            <div class="footer__menu">
+                <ul class="menu-foot">
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">პროფილი <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">აქსესუარი <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">კუთხოვანა <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">კუთხოვანა <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">დუბელი <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-foot__item">
+                        <a class="menu-foot__cat">სჭვალი <img src="assets/img/icons/plus.svg" alt=""><img src="assets/img/icons/minus.svg" alt=""></a>
+                        <ul>
+                            <li><a href="">საკიდი</a></li>
+                            <li><a href="">მავთული</a></li>
+                            <li><a href="">სხვა</a></li>
+                            <li><a href="">ყველას ნახვა</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line container">
+
+        </div>
+        <div class="footer__middle container">
+            <p>ყველა უფლება დაცულია</p>
+            <div class="socials">
+                <a href=""><img src="assets/img/icons/face.svg" alt=""></a>
+                <a href=""><img src="assets/img/icons/yout.svg" alt=""></a>
+                <a href=""><img src="assets/img/icons/insta.svg" alt=""></a>
+            </div>
+            <p id="scrollUp">მაღლა</p>
+            <p>დამზადებულია <a href="https://smartweb.ge/">SmartWeb </a> -ის მიერ</p>
+        </div>
+        <div class="footer__info">
+            <div>
+                <img src="assets/img/icons/bl-mail.svg" alt="">
+                    
+                </img>
+                <p>example@gmail.com</p>
+            </div>
+            <div>
+                <img src="assets/img/icons/bl-tel.svg" alt="">
+                    
+                </img>
+                <p>+995 555 544 311</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qXcpIcY9F-0osv8rC6voWz1fBtk06P4&amp;callback=initMap"></script>
+    
+</body>
+</html>

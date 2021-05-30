@@ -1,0 +1,127 @@
+.top-product {
+  padding: 125px 0;
+  background: #f8f8f8;
+
+  .container {
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  &__name {
+    text-align: left;
+    color: #171717;
+    margin-bottom: 40px;
+    width: 295px;
+  }
+
+  &__all {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: $red;
+
+    @include tab {
+      top: initial;
+      bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 0px;
+      height: 1px;
+      position: absolute;
+      background-color: #e4190b;
+      bottom: -10px;
+      right: 0;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 50px;
+      }
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 268px);
+    grid-auto-rows: 329px;
+    grid-gap: 25px;
+    justify-content: center;
+
+    @include xl {
+      grid-template-columns: repeat(auto-fill, 202px);
+      grid-auto-rows: 230px;
+    }
+
+    @include tab {
+      grid-template-columns: repeat(auto-fill, 162px);
+      grid-auto-rows: 197px;
+      grid-gap: 25px;
+    }
+
+    @include rwd(380) {
+      grid-gap: 15px;
+    }
+  }
+
+  &__item {
+    width: 268px;
+    height: 329px;
+    border-radius: 15px;
+    background: #fff;
+    margin-bottom: 25px;
+    color: inherit;
+
+    &:hover {
+      box-shadow: 0px 0px 30px rgba(20, 29, 41, 0.12);
+    }
+
+    @include xl {
+      width: 202px;
+      height: 230px;
+    }
+
+    @include tab {
+      width: 162px;
+      height: 197px;
+
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 60%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+
+      @include tab {
+        width: 158px;
+        height: 114px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  &__info {
+    margin: 8px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+
+    // @include tab {
+    //   height: auto;
+    // }
+
+    p {
+      font-family: "FireNorm";
+      font-size: calc(13px + (18 - 13) * ((100vw - 375px) / (1920 - 375)));
+    }
+  }
+}

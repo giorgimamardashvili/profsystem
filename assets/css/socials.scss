@@ -1,0 +1,36 @@
+.socials {
+  position: absolute;
+  left: 230px;
+
+  @include tab {
+    display: none;
+  }
+
+  a {
+    width: 22px;
+    height: 22px;
+    margin-right: 25px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.socials-header {
+  position: absolute;
+  display: none;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+
+  @include tab {
+    display: flex;
+  }
+
+  a {
+    margin: 15px;
+  }
+}

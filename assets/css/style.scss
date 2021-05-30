@@ -1,0 +1,144 @@
+@import "vars";
+// @import "reset";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  border: 0;
+  resize: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Myr", sans-serif;
+
+  @include xl {
+    font-size: calc(13px + (16 - 13) * ((100vw - 375px) / (1920 - 375)));
+  }
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  max-width: 1470px;
+  margin: auto;
+  padding: 0 15px;
+
+  // @include rwd(1470) {
+  //   width: 95%;
+  // }
+}
+
+h2 {
+  font-size: calc(18px + (28 - 18) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@import "header";
+@import "head-slider";
+@import "top-product";
+@import "about-us";
+@import "partners";
+@import "page-about";
+@import "page-categories";
+@import "menu";
+@import "items";
+@import "price";
+@import "pgn";
+@import "product";
+@import "photo-gallery";
+@import "contact";
+@import "branch";
+@import "map";
+@import "page-partners";
+@import "popup";
+@import "modal-swiper";
+@import "socials";
+@import "footer";
+
+.content {
+  margin-top: 240px;
+  width: 100%;
+
+  @include xl {
+    margin-top: 135px;
+  }
+
+  @include tab {
+    margin-top: 88px;
+  }
+}
+
+.header-scroll {
+  flex-direction: row;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.search-mob {
+  position: absolute;
+  top: -108px;
+  display: flex;
+  // width: 20%;
+  height: 56px;
+  border-radius: 12px;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 30px;
+  transition: top 0.5s;
+  left: 10%;
+  width: 80%;
+
+  &.active {
+    display: flex;
+    z-index: 2;
+    top: 108px;
+  }
+
+  input {
+    background: transparent;
+    width: 90%;
+  }
+
+  button {
+    background: transparent;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.background {
+  display: none;
+  width: 100%;
+  height: 330px;
+
+  @include tab {
+    display: block;
+    background-color: #f8f8f8;
+  }
+}

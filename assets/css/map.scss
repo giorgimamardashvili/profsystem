@@ -1,0 +1,34 @@
+.map {
+  margin-top: 240px;
+  height: calc(100vh - 240px);
+
+  @include xl {
+    margin-top: 135px;
+  }
+
+  @include tab {
+    margin-top: 88px;
+  }
+
+  > div {
+    height: 100%;
+  }
+}
+
+.markerContent {
+  padding: 8px 18px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    max-width: 249px;
+  }
+
+  &__top {
+    margin-bottom: 10px;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}

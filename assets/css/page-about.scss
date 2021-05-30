@@ -1,0 +1,27 @@
+.page-about {
+  padding-bottom: 110px;
+  padding-top: 80px;
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 25px;
+    min-height: 220px;
+  }
+
+  p {
+    font-family: "FiraBook";
+    line-height: 25px;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.price {
+  &__new {
+    font-family: "FiraBold";
+    font-size: calc(16px + (22 - 16) * ((100vw - 375px) / (1920 - 375)));
+    color: $red;
+  }
+  &__old {
+    font-family: "FiraNorm";
+    text-decoration: line-through;
+
+    @include lg {
+      font-size: 13px;
+    }
+  }
+}

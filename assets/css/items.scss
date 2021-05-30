@@ -1,0 +1,131 @@
+.items {
+  width: 100%;
+  padding: 85px 0 0 25px;
+
+  @include xl {
+    padding-top: 60px;
+  }
+
+  @include tab {
+    padding-left: 0;
+    padding-top: 185px;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @include m2 {
+      flex-direction: column;
+    }
+
+    h2 {
+      span {
+        color: $red;
+        font-size: inherit;
+      }
+    }
+
+    p {
+      font-family: "FiraNorm";
+      font-weight: 500;
+      text-align: left;
+      color: #171717;
+
+      @include m2 {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.items-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 524px);
+  grid-auto-rows: 297px;
+  grid-gap: 25px;
+  justify-content: center;
+
+  @include rwd(1470) {
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-rows: 251px;
+  }
+
+  @include lg {
+    grid-template-columns: repeat(auto-fill, 334px);
+    grid-auto-rows: 234px;
+  }
+}
+
+.item {
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #171717;
+
+  @include xl {
+    padding: 15px;
+  }
+
+  @include tab {
+    padding: 10px;
+  }
+
+  @include m2 {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 30px rgba(20, 29, 41, 0.12);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      width: 50%;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+      font-size: 18px;
+
+      @include lg {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__code {
+    font-family: "FiraNorm";
+    color: $grey;
+
+    @include lg {
+      font-style: 13px;
+    }
+  }
+
+  &__bottom {
+    p {
+      font-family: "FiraNorm";
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+      color: #171717;
+    }
+  }
+}

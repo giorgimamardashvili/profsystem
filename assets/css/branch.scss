@@ -1,0 +1,86 @@
+.branch {
+  padding: 85px 0 225px 0;
+
+  h2 {
+    margin-bottom: 110px;
+  }
+
+  form {
+    max-width: 464px;
+    width: 100%;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    label {
+      font-family: "FiraSemi";
+      line-height: 25.6px;
+      text-align: left;
+      color: #171717;
+    }
+
+    input {
+      width: 100%;
+      height: 56px;
+      border-radius: 15px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding-left: 30px;
+
+      &::-webkit-input-placeholder {
+        /* Edge */
+        color: $grey;
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $grey;
+      }
+
+      &::placeholder {
+        color: $grey;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 56px;
+      border-radius: 15px;
+      background: $red;
+
+      font-size: 18px;
+      line-height: 28px;
+      color: #fff;
+    }
+  }
+
+  &__wrong {
+    max-width: 707px;
+    width: 100%;
+    height: 110px;
+    border-radius: 15px;
+    background: rgba(228, 25, 11, 0.1);
+    border: 1px solid #e4190b;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    @include sm {
+      height: 70px;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 28px;
+      color: $red;
+    }
+  }
+}
